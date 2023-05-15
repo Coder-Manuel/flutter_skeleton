@@ -14,15 +14,15 @@ class SkeletonStyle {
   final SkeletonTheme theme;
 
   SkeletonStyle({
-    this.isAnimation: true,
-    this.isShowAvatar: true,
-    this.isCircleAvatar: true,
-    this.barCount: 2,
-    this.borderRadius: BorderRadius.zero,
+    this.isAnimation = true,
+    this.isShowAvatar = true,
+    this.isCircleAvatar = true,
+    this.barCount = 2,
+    this.borderRadius = BorderRadius.zero,
     this.padding,
     this.colors,
     this.backgroundColor,
-    this.theme: SkeletonTheme.Light,
+    this.theme = SkeletonTheme.Light,
   });
 
   const SkeletonStyle.origin()

@@ -12,7 +12,7 @@ class ListTileSkeleton extends StatefulWidget {
 
   ListTileSkeleton({
     Key? key,
-    this.style: const SkeletonStyle.origin(),
+    this.style = const SkeletonStyle.origin(),
   }) : super(key: key);
 
   @override

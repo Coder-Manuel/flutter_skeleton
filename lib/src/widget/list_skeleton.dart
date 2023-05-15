@@ -9,8 +9,8 @@ class ListSkeleton extends StatelessWidget {
 
   ListSkeleton({
     Key? key,
-    this.style: const SkeletonStyle.origin(),
-    this.length: 10,
+    this.style = const SkeletonStyle.origin(),
+    this.length = 10,
   }) : super(key: key);
 
   @override
