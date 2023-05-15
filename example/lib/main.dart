@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({Key key}) : super(key: key);
+  MyHomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,8 +32,10 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            RaisedButton(
-              color: Colors.blue,
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll<Color>(Colors.blue),
+              ),
               child: Text("List Skeleton", style: textStyle),
               onPressed: () {
                 Navigator.of(context)
@@ -42,8 +44,10 @@ class MyHomePage extends StatelessWidget {
                 }));
               },
             ),
-            RaisedButton(
-              color: Colors.blue,
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll<Color>(Colors.blue),
+              ),
               child: Text("Card Skeleton", style: textStyle),
               onPressed: () {
                 Navigator.of(context)
@@ -52,8 +56,10 @@ class MyHomePage extends StatelessWidget {
                 }));
               },
             ),
-            RaisedButton(
-              color: Colors.blue,
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStatePropertyAll<Color>(Colors.blue),
+              ),
               child: Text("Card List Skeleton", style: textStyle),
               onPressed: () {
                 Navigator.of(context)
